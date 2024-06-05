@@ -5,32 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af84f99-af82-4703-be16-16017f0fb01c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cruise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/fire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/i.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/letter-e (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/s (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/travel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/AircraftCarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/NavalBattle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/GameStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/WelcomeStage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/alert/AlertBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/alert/IAlertBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/game-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/Fondito.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/FondoPantalla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/welcome-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/viewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/12 sin título_20240601193654.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/12 sin título_20240601193654.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/12 sin título_20240601193705.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/12 sin título_20240601193705.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/12 sin título_20240601193723.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/12 sin título_20240601193723.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/12 sin título_20240601193731.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/12 sin título_20240601193731.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/a.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/b.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/bomb.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/bomb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/cross.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/cross.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/cruise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/cruise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/fire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/h.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/i.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/i.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/l.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/letter-e (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/letter-e (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/p.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/s (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/s (1).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ship1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/ship1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ship2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/ship2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ship3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/ship3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ship4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/ship4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/t.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/t.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/travel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/travel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +57,21 @@
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../BattleShipD\exportToHTML" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -65,16 +96,21 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "drb",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/heidy/OneDrive/Escritorio/Programación/BattleShipD",
+    "last_opened_file_path": "D:/COSITAS/POE/battleshipD",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,11 +118,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\heidy\OneDrive\Escritorio\Programación\Sudoku\BattleShipD\src\main\resources\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\COSITAS\POE\battleshipD\src\main\resources\org\example\battleshipd" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -100,6 +140,8 @@
       <updated>1716763905962</updated>
       <workItem from="1716763906988" duration="1142000" />
       <workItem from="1716765338031" duration="4383000" />
+      <workItem from="1717530494767" duration="2020000" />
+      <workItem from="1717535191169" duration="8162000" />
     </task>
     <servers />
   </component>
