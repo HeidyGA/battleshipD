@@ -1,6 +1,7 @@
 package org.example.battleshipd.controller;
 
-import org.example.battleshipd.model.Ship;
+import javafx.scene.image.Image;
+
 import org.example.battleshipd.view.Table;
 
 import javafx.event.ActionEvent;
@@ -15,6 +16,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+
+import java.util.Objects;
 import java.util.Random;
 
 public class GameController {
@@ -34,7 +37,7 @@ public class GameController {
     Table tableTwo = new Table();
     GridPane gridPane = new GridPane();
     GridPane gridPaneTwo = new GridPane();
-    private static final int[] SHIP_SIZES = {4, 3, 3, 2, 2, 2, 1, 1, 1,1};
+    private static final int[] SHIP_SIZES = {4, 3, 3, 2, 2, 2, 1, 1, 1, 1};
     private static final String[] list = new String[]{"portaAvion", "submarino", "destructor", "fragata"};
     private static final Random random = new Random();
     private static final int rows = 11;
@@ -46,8 +49,14 @@ public class GameController {
     private int currentShipIndex = 0; // Índice del barco actual
 
     private Rectangle ship;
+    private boolean playerTurn = true; // Control de turno
 
-    //Ship ship = new Ship();
+    private final Image aguaImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/org/example/battleshipd/images/cross.png")));
+
+    private final Image tocadoImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/org/example/battleshipd/images/fire.png")));
+    private final Image hundidoImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/org/example/battleshipd/images/cross.png")));
+
+
 
     @FXML
     public void inicialize() {
@@ -55,7 +64,7 @@ public class GameController {
         gridPaneTwo.setVisible(false);
         anchorpaneTwo.setVisible(false);
         labelEnemy.setVisible(false);
-
+        gridPaneTwo.setOnMouseClicked(this::handleEnemyGridClick);
         BorderStroke borderStroke = new BorderStroke(
                 Color.BLACK, // Color del borde
                 BorderStrokeStyle.SOLID, // Estilo del borde
@@ -153,6 +162,7 @@ public class GameController {
                 }
             });
         }
+        gridPaneTwo.setOnMouseClicked(this::handleEnemyGridClick);
     }
 
     private void handleKeyPressed(KeyEvent event) {
@@ -360,8 +370,46 @@ public class GameController {
             }
         }
     }
+    private void enemyMove() {
+        boolean moveMade = false;
+        while (!moveMade) {
+            int row = random.nextInt(10) + 1;
+            int col = random.nextInt(10) + 1;
 
+            if (position1[row][col] == 0 || position1[row][col] == 1) {
+                Pane pane = getNodeFromGridPane(gridPane, col, row);
+                if (position1[row][col] == 1) {
+                    pane.setStyle("-fx-background-color: yellow;");
+                    position1[row][col] = 2; // Marcar como golpeado
+                } else if (position1[row][col] == 0) {
+                    pane.setStyle("-fx-background-color: red;");
+                    position1[row][col] = 3; // Marcar como fallado
+                    moveMade = true; // Movimiento hecho, terminar el turno del enemigo
+                }
+                playerTurn = true; // Cambiar turno al jugador
+            }
+        }
+    }
 
+    @FXML
+    private void handleEnemyGridClick(MouseEvent event) {
+        if (!playerTurn) return; // Si no es el turno del jugador, no hacer nada
+
+        int col = (int) (event.getX() / CELL_SIZE);
+        int row = (int) (event.getY() / CELL_SIZE);
+
+        if (row >= 1 && row <= 10 && col >= 1 && col <= 10) {
+            Pane pane = getNodeFromGridPane(gridPaneTwo, col, row);
+            String[][] enemyTable = tableTwo.getTable();
+            if (enemyTable[row][col].equals("X")) {
+                pane.setStyle("-fx-background-color: yellow;");
+                enemyTable[row][col] = "H"; // Marcar como golpeado
+            } else if (enemyTable[row][col].equals(".")) {
+                pane.setStyle("-fx-background-color: red;");
+                enemyTable[row][col] = "M"; // Marcar como fallado
+                playerTurn = false; // Cambiar turno al enemigo
+                enemyMove(); // Ejecutar el movimiento del enemigo
+            }
+        }
+    }
 }
-
-

@@ -32,7 +32,7 @@
             <children>
                 <ImageView fitHeight="373.0" fitWidth="396.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/13%20sin%20título_20240605193930.png" />
+                        <Image url="@images/ocean.png" />
                     </image>
                     <effect>
                         <BoxBlur height="9.0" width="9.0" />
@@ -43,7 +43,7 @@
             <children>
                 <ImageView fitHeight="396.0" fitWidth="396.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/13%20sin%20título_20240605193930.png" />
+                        <Image url="@images/ocean.png" />
                     </image>
                     <effect>
                         <BoxBlur height="9.0" width="9.0" />

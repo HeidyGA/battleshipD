@@ -24,6 +24,7 @@ public class WelcomeController {
                 "\n• Tablero del enemigo: Se desplega su flota. Será aquí donde se desarrollen tus movimientos tratando de hundir los barcos enemigos. Este tablero aparecerá en tu pantalla  una vez comience la partida y en él quedarán registrados todos sus movimientos realizados \n"+
                 "\n•Contiene una flota de 9 barcos para cada jugador: \n"+
                 "\n• 1 portaaviones (4 casillas) "+"\n• 2 submarinos (3 casillas cada uno)"+"\n• 3 destructores (2 casillas cada uno)"+"\n• 4 fragatas (1 casilla cada una)"+
+                "\n• Para rotar los barcos(horizontal o vertical) debes presionar la tecla R"+
                 "\n\nMovimientos: \n\n"+
                 "• Agua: Disparo en una casilla vacía. Se marca con una X y pasa el turno al enemigo. "+
                 "\n• Tocado: Disparo en una parte de un barco que ocupa mas de 2 casilla. Se marca la parte tocada y vuelves a disparar. "+

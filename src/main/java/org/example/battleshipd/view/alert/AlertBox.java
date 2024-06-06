@@ -11,8 +11,8 @@ public class AlertBox {
         alert.setHeaderText(header);
         alert.setContentText(content);
         Stage alertStage = (Stage) alert.getDialogPane().getScene().getWindow();
-        alertStage.setWidth(1000); // Ajustar el ancho deseado
-        alertStage.setHeight(1000); // Ajustar la altura deseada
+        alertStage.setWidth(1000);
+        alertStage.setHeight(1000);
         alert.showAndWait();
     }
 
