@@ -19,7 +19,7 @@ public class GameStage extends Stage {
         Parent root;
         root = loader.load();
         gameController = loader.getController();
-        setTitle("Ventana juego de Sudoku");
+        setTitle("BattleShip");
         Scene scene = new Scene(root);
         getIcons().add(
                 new Image(

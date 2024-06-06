@@ -19,17 +19,17 @@ public class WelcomeController {
     void buttonRules(ActionEvent event) {
         String title = "¿Como jugar?";
         String header = "Rules";
-        String content = "Batalla Naval es un juego de estrategia y suerte para dos participantes (jugador vs computador).\n"+
-                "\nEl objetivo del juego es hundir todos los barcos del oponente primero. \n"+
-                "\nCada jugador tiene 2 tableros de 10x10: \n"+
-                "\n-> Tablero de posición: Muestra la ubicación de tu flota y los disparos del oponente. Solo es de observación. \n"+
-                "\n-> Tablero principal: Muestra el territorio del enemigo donde disparas para hundir sus barcos. Registra tus movimientos, mostrando disparos fallidos y aciertos. \n"+
-                "\nCada jugador tiene una flota de 9 barcos: \n"+
+        String content = " • Cada jugador tiene 2 tableros de 10x10: \n"+
+                "\n•Tablero de jugador: En él se distribuye tu flota antes de comenzar la partida y sólo será de observación. \n"+
+                "\n• Tablero del enemigo: Se desplega su flota. Será aquí donde se desarrollen tus movimientos tratando de hundir los barcos enemigos. Este tablero aparecerá en tu pantalla  una vez comience la partida y en él quedarán registrados todos sus movimientos realizados \n"+
+                "\n•Contiene una flota de 9 barcos para cada jugador: \n"+
                 "\n• 1 portaaviones (4 casillas) "+"\n• 2 submarinos (3 casillas cada uno)"+"\n• 3 destructores (2 casillas cada uno)"+"\n• 4 fragatas (1 casilla cada una)"+
-                "\n\nLos barcos se colocan horizontal o verticalmente en el tablero de posición. \n\nTerminología y movimientos: \n\n"+
-                "• Agua: Disparo en una casilla vacía. Se marca con una X y pasa el turno al oponente. "+
-                "\n• Tocado: Disparo en una parte de un barco mayor de 1 casilla. Se marca la parte tocada y el jugador vuelve a disparar. "+
-                "\n• Hundido: Disparo en una fragata o un barco con todas sus partes tocadas. Se marca el barco completo y el jugador vuelve a disparar. Gana quien hunda toda la flota enemiga.";;
+                "\n• Para rotar los barcos(horizontal o vertical) debes presionar la tecla R"+
+                "\n\nMovimientos: \n\n"+
+                "• Agua: Disparo en una casilla vacía. Se marca con una X y pasa el turno al enemigo. "+
+                "\n• Tocado: Disparo en una parte de un barco que ocupa mas de 2 casilla. Se marca la parte tocada y vuelves a disparar. "+
+                "\n• Hundido: Disparo en una fragata o un barco con todas sus partes tocadas. Se marca el barco completo y  vuelves a disparar. " +
+                "\n•¡Gana quien hunda toda la flota enemiga,que comience la batalla!.";;
 
         new AlertBox().showMessage(title, header, content);
     }
