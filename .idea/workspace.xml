@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af84f99-af82-4703-be16-16017f0fb01c" name="Changes" comment="Added classes and Alerts">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/book (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/cargo-ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/gamer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/start (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/streamer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8af84f99-af82-4703-be16-16017f0fb01c" name="Changes" comment="funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/GameStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/WelcomeStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/WelcomeStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/game-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/welcome-view.fxml" afterDir="false" />
     </list>
@@ -58,6 +48,9 @@
     &quot;accountId&quot;: &quot;76573031-0cea-443c-a4de-5f924e25b2a5&quot;
   }
 }</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -86,7 +79,7 @@
     "git-widget-placeholder": "irc",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/isaru/IdeaProjects/battleshipD/src/main/resources/org/example/battleshipd/images",
+    "last_opened_file_path": "C:/Users/isaru/Downloads/battleshipD-main3/battleshipD-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,7 +120,7 @@
       <workItem from="1716765338031" duration="4383000" />
       <workItem from="1717530494767" duration="2020000" />
       <workItem from="1717535191169" duration="8463000" />
-      <workItem from="1717622927263" duration="3678000" />
+      <workItem from="1717622927263" duration="15087000" />
     </task>
     <task id="LOCAL-00001" summary="Added classes and Alerts">
       <option name="closed" value="true" />
@@ -137,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717545945319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="funcional">
+      <option name="closed" value="true" />
+      <created>1717634355890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717634355890</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added classes and Alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes and Alerts" />
+    <MESSAGE value="funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="funcional" />
   </component>
 </project>

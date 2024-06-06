@@ -1,8 +1,6 @@
 package org.example.battleshipd.controller;
 
-//Estoy tratando de hacer push xd
 import org.example.battleshipd.model.Ship;
-
 import org.example.battleshipd.view.Table;
 
 import javafx.event.ActionEvent;
@@ -36,7 +34,7 @@ public class GameController {
     Table tableTwo = new Table();
     GridPane gridPane = new GridPane();
     GridPane gridPaneTwo = new GridPane();
-    private static final int[] SHIP_SIZES = {4, 3, 3, 2, 2, 2, 1, 1, 1};
+    private static final int[] SHIP_SIZES = {4, 3, 3, 2, 2, 2, 1, 1, 1,1};
     private static final String[] list = new String[]{"portaAvion", "submarino", "destructor", "fragata"};
     private static final Random random = new Random();
     private static final int rows = 11;
@@ -51,15 +49,12 @@ public class GameController {
 
     //Ship ship = new Ship();
 
-
-
     @FXML
     public void inicialize() {
 
         gridPaneTwo.setVisible(false);
         anchorpaneTwo.setVisible(false);
         labelEnemy.setVisible(false);
-
 
         BorderStroke borderStroke = new BorderStroke(
                 Color.BLACK, // Color del borde
@@ -81,9 +76,9 @@ public class GameController {
                 if (row == 0 && col > 0) {
                     Label label = new Label(Integer.toString(col));
                     label.setStyle("-fx-padding:5px; -fx-font-size: 16 px; -fx-text-fill: black; -fx-background-color:#9b9898; -fx-alignment: center");
-                    label.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
-                    GridPane.setHgrow(label,Priority.ALWAYS);
-                    GridPane.setVgrow(label,Priority.ALWAYS);
+                    label.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+                    GridPane.setHgrow(label, Priority.ALWAYS);
+                    GridPane.setVgrow(label, Priority.ALWAYS);
                     GridPane.setHalignment(label, HPos.CENTER); // Alinear el texto al centro horizontalmente
                     GridPane.setValignment(label, VPos.CENTER);
                     gridPane.add(label, col, row); // Agregar el número a la celda
@@ -91,9 +86,9 @@ public class GameController {
                 if (col == 0 && row > 0) {
                     Label label = new Label(Integer.toString(row));
                     label.setStyle("-fx-padding: 5 px; -fx-font-size: 16px; -fx-text-fill: black; -fx-background-color:#9b9898; -fx-alignment: center");
-                    label.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
-                    GridPane.setHgrow(label,Priority.ALWAYS);
-                    GridPane.setVgrow(label,Priority.ALWAYS);
+                    label.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+                    GridPane.setHgrow(label, Priority.ALWAYS);
+                    GridPane.setVgrow(label, Priority.ALWAYS);
                     GridPane.setHalignment(label, HPos.CENTER); // Alinear el texto al centro horizontalmente
                     GridPane.setValignment(label, VPos.CENTER);
                     gridPane.add(label, col, row);// Agregar el número a la celda
@@ -109,27 +104,26 @@ public class GameController {
                 Pane panelTwo = new Pane();
                 panelTwo.setBorder(border);
                 panelTwo.setStyle("-fx-padding: 17px; -fx-border-color: GHOSTWHITE; -fx-opacity:50%; -fx-border-width:12 px; "); // Padding interno del panel
-                gridPane.setAlignment(Pos.CENTER);
+                gridPaneTwo.setAlignment(Pos.CENTER);
                 gridPaneTwo.setBackground((new Background(new BackgroundFill(Color.TRANSPARENT, CornerRadii.EMPTY, null))));
                 gridPaneTwo.add(panelTwo, col, row);
 
                 if (row == 0 && col > 0) {
                     Label label = new Label(Integer.toString(col));
                     label.setStyle("-fx-padding: 5px; -fx-font-size: 16px; -fx-text-fill: black; -fx-background-color:#9b9898; -fx-alignment: center"); // Fondo blanco y tamaño de letra 16px
-                    label.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
-                    GridPane.setHgrow(label,Priority.ALWAYS);
-                    GridPane.setVgrow(label,Priority.ALWAYS);
+                    label.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+                    GridPane.setHgrow(label, Priority.ALWAYS);
+                    GridPane.setVgrow(label, Priority.ALWAYS);
                     GridPane.setHalignment(label, HPos.CENTER); // Alinear el texto al centro horizontalmente
                     GridPane.setValignment(label, VPos.CENTER);
-                    GridPane.setHalignment(label, HPos.CENTER); // Alinear el texto al centro horizontalmente
                     gridPaneTwo.add(label, col, row); // Agregar el número a la celda
                 }
                 if (col == 0 && row > 0) {
                     Label label = new Label(Integer.toString(row));
                     label.setStyle("-fx-padding: 5px; -fx-font-size: 16px; -fx-text-fill: black; -fx-background-color:#9b9898; -fx-alignment: center");
-                    label.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
-                    GridPane.setHgrow(label,Priority.ALWAYS);
-                    GridPane.setVgrow(label,Priority.ALWAYS);
+                    label.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+                    GridPane.setHgrow(label, Priority.ALWAYS);
+                    GridPane.setVgrow(label, Priority.ALWAYS);
                     GridPane.setHalignment(label, HPos.CENTER); // Alinear el texto al centro horizontalmente
                     GridPane.setValignment(label, VPos.CENTER);
                     gridPaneTwo.add(label, col, row); // Agregar el número a la celda
@@ -170,6 +164,7 @@ public class GameController {
                 break;
         }
     }
+
     private void placeShipOnBoard() {
         int shipSize = SHIP_SIZES[currentShipIndex];
         if (isHorizontal) {
@@ -184,16 +179,25 @@ public class GameController {
             }
         }
 
-        //anchorpaneTwo.getChildren().add(gridPaneTwo);
-
-        // Pane appearPane= ship.getAircraftCarrier();
-
-        //hboxPanes.getChildren().add(appearPane);
+        // Proceso de actualización visual aquí
+        for (int i = 0; i < shipSize; i++) {
+            int col = isHorizontal ? currentCol + i : currentCol;
+            int row = isHorizontal ? currentRow : currentRow + i;
+            Pane pane = getNodeFromGridPane(gridPane, col, row);
+            if (pane != null) {
+                pane.setStyle("-fx-background-color: gray;");
+            }
+        }
     }
 
-
-
-
+    private Pane getNodeFromGridPane(GridPane gridPane, int col, int row) {
+        for (javafx.scene.Node node : gridPane.getChildren()) {
+            if (GridPane.getColumnIndex(node) == col && GridPane.getRowIndex(node) == row) {
+                return (Pane) node;
+            }
+        }
+        return null;
+    }
 
     private void updateShipSize() {
         int shipSize = SHIP_SIZES[currentShipIndex];
@@ -235,8 +239,8 @@ public class GameController {
     }
 
     private void handleShipClick(MouseEvent event) {
-        Integer shipCol = GridPane.getColumnIndex(ship);
-        Integer shipRow = GridPane.getRowIndex(ship);
+        int shipCol = GridPane.getColumnIndex(ship);
+        int shipRow = GridPane.getRowIndex(ship);
 
         int shipSize = SHIP_SIZES[currentShipIndex];
         boolean canPlace = true;
@@ -244,7 +248,7 @@ public class GameController {
         for (int i = 0; i < shipSize; i++) {
             int col = isHorizontal ? shipCol + i : shipCol;
             int row = isHorizontal ? shipRow : shipRow + i;
-            if (!checkCell(row, col,tableOne.getTable())) {
+            if (!checkCell(row, col, tableOne.getTable())) {
                 canPlace = false;
                 break;
             }
@@ -266,27 +270,6 @@ public class GameController {
         GridPane.setRowIndex(ship, currentRow);
         GridPane.setColumnSpan(ship, isHorizontal ? shipSize : 1);
         GridPane.setRowSpan(ship, isHorizontal ? 1 : shipSize);
-
-        /*for (int i = 0; i < colSpan; i++) {
-            for (int j = 0; j < rowSpan; j++) {
-                int col = shipCol + i;
-                int row = shipRow + j;
-                Pane pane = (Pane) gridPane.getChildren().get(shipRow + j * 11 + shipCol + i);
-                pane.setOnMouseClicked(null);
-
-                if (checkCell(row,col, tableOne.getTable())) {
-                    System.out.println("Ha puesto un barco at row " + row + ", column " + col);
-
-                    placeShipOnBoard();
-
-                    // Cambiar al siguiente barco
-                    currentShipIndex++;
-                    if (currentShipIndex < SHIP_SIZES.length) {
-                        updateShipSize();
-                    } else {
-                        System.out.println("All ships placed.");
-                    }
-         */
     }
 
     private void handleMouseMoved(MouseEvent event) {
@@ -296,14 +279,14 @@ public class GameController {
         // Verificar que el barco no se salga de los límites
         int shipSize = SHIP_SIZES[currentShipIndex];
         if (isHorizontal) {
-            if (col + shipSize <= 11 && row < 11 && row > 0 && col > 0 ) {
+            if (col + shipSize <= 11 && row < 11 && row > 0 && col > 0) {
                 currentCol = col;
                 currentRow = row;
                 GridPane.setColumnIndex(ship, col);
                 GridPane.setRowIndex(ship, row);
             }
         } else {
-            if (row + shipSize <= 11 && col < 11 && row > 0 && col > 0 ) {
+            if (row + shipSize <= 11 && col < 11 && row > 0 && col > 0) {
                 currentCol = col;
                 currentRow = row;
                 GridPane.setColumnIndex(ship, col);
@@ -311,6 +294,7 @@ public class GameController {
             }
         }
     }
+
     @FXML
     void buttonPlayGame(ActionEvent event) {
         gridPaneTwo.setVisible(true);
@@ -326,18 +310,12 @@ public class GameController {
         ship.setVisible(false);
     }
 
-    public boolean checkCell (int row, int cols, String[][] table){
-        System.out.println();
-        boolean r = false;
-        for (int i = 0; i < 11; i++) {
-            for (int j = 0; j < 11; j++) {
-                if (table[row][cols] == ".") {
-                    table[row][cols] = "X";
-                    r = true;
-                }
-            }
+    public boolean checkCell(int row, int cols, String[][] table) {
+        if (table[row][cols].equals(".")) {
+            table[row][cols] = "X";
+            return true;
         }
-        return r;
+        return false;
     }
 
     private static void placeShips(String[][] table) {
@@ -383,4 +361,7 @@ public class GameController {
         }
     }
 
+
 }
+
+
