@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af84f99-af82-4703-be16-16017f0fb01c" name="Changes" comment="Added classes and Alerts" />
+    <list default="true" id="8af84f99-af82-4703-be16-16017f0fb01c" name="Changes" comment="Added classes and Alerts">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/book (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/cargo-ship.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/gamer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/start (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/images/streamer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/controller/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/model/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/GameStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/WelcomeStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/battleshipd/view/WelcomeStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/welcome-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/battleshipd/welcome-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,18 +46,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "eldanielrojasb"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eldanielrojasb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/HeidyGA/battleshipD.git",
-    "accountId": "76573031-0cea-443c-a4de-5f924e25b2a5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HeidyGA/battleshipD.git&quot;,
+    &quot;accountId&quot;: &quot;76573031-0cea-443c-a4de-5f924e25b2a5&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -67,10 +83,10 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "drb",
+    "git-widget-placeholder": "irc",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/COSITAS/POE/battleshipD",
+    "last_opened_file_path": "C:/Users/isaru/IdeaProjects/battleshipD/src/main/resources/org/example/battleshipd/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,17 +100,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isaru\IdeaProjects\battleshipD\src\main\resources\org\example\battleshipd\images" />
       <recent name="C:\Users\heidy\OneDrive\Escritorio\Programación\Sudoku\BattleShipD\src\main\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaru\IdeaProjects\battleshipD\src\main\resources\org\example\battleshipd\images" />
       <recent name="D:\COSITAS\POE\battleshipD\src\main\resources\org\example\battleshipd" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
       </set>
     </attachedChunks>
   </component>
@@ -110,6 +127,7 @@
       <workItem from="1716765338031" duration="4383000" />
       <workItem from="1717530494767" duration="2020000" />
       <workItem from="1717535191169" duration="8463000" />
+      <workItem from="1717622927263" duration="3678000" />
     </task>
     <task id="LOCAL-00001" summary="Added classes and Alerts">
       <option name="closed" value="true" />
@@ -124,6 +142,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

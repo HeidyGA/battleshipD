@@ -21,7 +21,7 @@ public class WelcomeStage extends Stage {
         Scene scene = new Scene(root);
         getIcons().add(
                 new Image(
-                        String.valueOf(getClass().getResource("org/example/battleshipd/images/travel.png"))));
+                        String.valueOf(getClass().getResource("/org/example/battleshipd/images/travel.png"))));
         setScene(scene);
         setResizable(false);
         show();
@@ -44,4 +44,5 @@ public class WelcomeStage extends Stage {
         WelcomeStageHolder.INSTANCE = null;
     }
 }
+
 
